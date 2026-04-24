@@ -1,0 +1,205 @@
+* {
+    margin: 0; /* elimina el espacio blanco en la pagina */
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Cairo;
+    background-color: #f9f9f9; /* color suave? */
+    color: #333; /* color texto principal */
+}
+
+header {
+    font-family: Poppins;
+    background-color: #008080; /* color de fondo*/
+    padding: 30px;
+    text-align: center;
+}
+
+header h1 {
+    color: #ffffff; /* blanco */
+    margin: 30px 0 20px 0;
+    font-size: 50px;
+}
+
+main {
+    max-width: 1500px;
+    margin: 50px auto;
+    padding: 20px;
+    font-family:  Cairo;
+}
+
+h2 {
+    color: #008080;
+}
+
+nav {
+    margin: 40px 0 10px 0;
+}
+
+nav ul {/* lista de enlaces*/
+    padding: 0;
+    margin: 0;
+    list-style: none; /* elimina puntos */
+    display: flex;
+    justify-content: center;
+    gap: 15px;
+}
+
+nav a {/* enlaces de navegación*/
+    display: inline-block; /* no se desacomodan las palabras */
+    padding: 5px 10px;
+    border-radius: 4px;
+    font-weight: bold;
+    color: #ffffff;
+    text-decoration: none;
+    transition: background-color 0.3s, color 0.3s;
+}
+
+nav a:hover {/* tono más oscuro al poner el cursor en el enlace*/
+    background-color: #006666;
+    color: #ffffff;
+}
+
+.contenedor-tarjetas {
+  display: flex;
+  flex-wrap: wrap; /* las tarjetas pasan a la siguiente línea */
+  justify-content: center;
+  gap: 20px; /* espacio entre tarjetas */
+  padding: 20px;
+}
+
+.tarjeta {
+  padding: 20px;
+  flex: 1 1 300px; /* el objeto crece o disminuye partiendo de mínimo 300px */
+  max-width: 400px; /* Limita el ancho máximo */
+  height: auto;
+  background-color: #ffffff;
+  border: 2px solid #ddd;
+  border-radius: 8px;
+  text-align: center;
+  box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+  -webkit-box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+  -moz-box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+}
+
+.tarjeta:hover {/*cambia la sombra al pasar el cursor*/
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+.tarjeta a {
+    display: block;
+    text-decoration: none;
+}
+
+.tarjeta img {
+    max-width: 100%;
+    height: auto;
+    display: block;
+    margin: 0 auto;
+}
+
+.tarjeta p {
+    padding: 10px;
+    font-weight: bold;
+    color: #008080;
+}
+
+#foto {
+    text-align: center; /* centra la foto */
+    margin: 0 0 30px 0;
+}
+
+#foto img {
+    margin: 30px 0;
+    max-width: 400px;
+    width: 100%;
+    border-radius: 8px;
+    border: 2px solid #008080; /* borde en color principal */
+    box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+    -webkit-box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+    -moz-box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+}
+
+.dato {/* cuadro de dato */
+    background-color: #f0f0f0;
+    padding: 15px;
+    border-radius: 8px;
+    border: 1px solid #008080; /* borde en color principal */
+    box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+    -webkit-box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+    -moz-box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+    overflow: hidden;
+}
+
+.dato p {
+    font-family: Cairo;
+    margin: 10px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    text-align: justify;;
+}
+
+.dato img {
+    width: 50px;
+    height: 50px;
+    margin: 10px 30px;
+    float: left;
+}
+
+.dato ul {
+    margin: 10px 10px 10px 40px;
+    font-size: 20px;
+    font-weight: bold;
+    color: #000000;
+    padding-left: 0;
+    line-height: 1.5;
+}
+
+.dato-contenedor {
+    background-color: #f0f0f0;
+    padding: 50px;
+    border-radius: 8px;
+    border: 20px ridge #008080;
+    box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+    -webkit-box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+    -moz-box-shadow: 7px 10px 10px 0px rgba(79,69,69,1);
+}
+
+hr {
+    margin: 20px 0;
+    border: none;
+}
+
+footer {/* enlace de regreso */
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+footer a {
+    color: #008080;
+    text-decoration: none;/* elimina subrayado */
+    font-weight: bold;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+
+#regreso {/*volver al inicio en datos pe*/
+    margin: 0;
+    padding: 0;
+    text-align: center;
+    padding: 20px;
+    background-color: #f0f0f0;
+}
+#regreso a {
+    color: #008080;
+    text-decoration: none;
+    font-weight: bold;
+}
+#regreso a:hover {
+    text-decoration: underline;
+}
