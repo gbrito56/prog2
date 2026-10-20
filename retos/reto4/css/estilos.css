@@ -121,7 +121,7 @@ nav li a:hover {
   gap: 20px; /* Separación tarjetas */
 }
 
-.col-ancha {
+.col-12 {
   width: 100%;
 }
 
@@ -138,7 +138,7 @@ nav li a:hover {
 }
 
 @media (min-width: 768px) {
-  .col-tercio {
+  .col-md-4 {
     width: calc(33.333% - 14px); /* descontar gap */
   }
 
